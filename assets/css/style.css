@@ -319,3 +319,55 @@ hr {
         bottom: 25% !important;
     }
 }
+
+/*----------------buy book-----------------*/
+
+#buy-book {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.order-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.order-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+}
+
+.order-col p {
+    font-size: 14px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.book img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.book-info .fa {
+    margin-left: 10px;
+    color: #59dd2d;
+    font-size: 20px;
+
+}
+
+.book-info p {
+    color: #009688;
+}
