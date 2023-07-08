@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     
     <title>Street Gastronomy by Kristian Smith</title>
 </head>
@@ -34,11 +36,11 @@
 <div id="sideNav">
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#feature">Cookbook</a></li>
+            <li><a href="#recipe">Recipe</a></li>
+            <li><a href="#buy-book">Order</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
 </div>
@@ -211,6 +213,11 @@ menuBtn.onclick = function() {
         menu.src = "assets/images/menu.png";
     }
 }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
 
 </script>
 </body>
