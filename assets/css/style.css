@@ -343,6 +343,7 @@ hr {
     border-radius: 5px;
     box-shadow: 0 10px 20px 3px #00968814;
     cursor: pointer;
+    transition: transform 0.5s;
 }
 
 .order-col p {
@@ -356,7 +357,7 @@ hr {
 }
 
 .book img {
-    width: 40px;
+    width: 140px;
     margin-right: 20px;
     border-radius: 3px;
 }
@@ -365,9 +366,75 @@ hr {
     margin-left: 10px;
     color: #59dd2d;
     font-size: 20px;
-
 }
 
 .book-info p {
     color: #009688;
+}
+
+.order-col:hover {
+    transform: translateY(-7px);
+}
+
+.order-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #00796b;
+}
+
+
+
+
+@media screen and (max-width: 770px) {
+    .order-col {
+        flex-basis: 100%;
+    }
+}
+
+/*---------------footer-------------------*/
+
+#footer {
+    padding: 100px 0 20px;
+    background: #efefef;
+
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
 }
