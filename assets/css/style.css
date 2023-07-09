@@ -108,6 +108,36 @@ nav ul li a {
     margin-top: 15px;
 }
 
+@media screen and (max-width: 1000px) {
+    .banner-text h1 {
+      font-size: 60px;
+    }
+    
+    .banner-text p {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .banner-text h1 {
+      font-size: 40px;
+    }
+    
+    .banner-text p {
+      font-size: 15px;
+    }
+    
+    .logo {
+      width: 60px;
+    }
+    
+    .banner-btn a {
+      width: 120px;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  }
+
 @media screen and (max-width: 770px) {
 
     #banner {
@@ -127,6 +157,29 @@ nav ul li a {
         margin: 20px auto;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .banner-text h1 {
+      font-size: 30px;
+      margin-top: -5px;
+    }
+    
+    .banner-text p {
+      font-size: 12px;
+      margin-top: -3px;
+    }
+    
+    .logo {
+      width: 40px;
+    }
+    
+    .banner-btn a {
+      width: 100px;
+      padding: 8px 0;
+      font-size: 10px;
+    }
+  }
+
 
 /*----------------features-----------------*/
 
@@ -220,6 +273,46 @@ nav ul li a {
     text-align: initial;
 }
 
+@media screen and (max-width: 1000px) {
+    .title-text h1 {
+      font-size: 40px;
+    }
+    
+    .title-text p {
+      font-size: 16px;
+    }
+    
+    .features-img img {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .title-text h1 {
+      font-size: 30px;
+    }
+    
+    .title-text p {
+      font-size: 14px;
+    }
+    
+    .features-img img {
+      width: 50%;
+    }
+    
+    .features h1 {
+      font-size: 24px;
+    }
+    
+    .features-desc {
+      flex-direction: column;
+    }
+    
+    .feature-text p {
+      padding: 10px 20px;
+    }
+  }
+
 @media screen and (max-width: 770px) {
     .title-text h1 {
         font-size: 24px;
@@ -237,6 +330,24 @@ nav ul li a {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .title-text h1 {
+      font-size: 20px;
+    }
+    
+    .title-text p {
+      font-size: 12px;
+    }
+    
+    .features-img img {
+      width: 40%;
+    }
+    
+    .features h1 {
+      font-size: 18px;
+    }
+  }
 
 /*------------recipe-----------*/
 
@@ -311,6 +422,35 @@ hr {
     opacity: 1;
 }
 
+@media screen and (max-width: 1000px) {
+    .single-recipe {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .recipe-desc p {
+      font-size: 12px;
+    }
+  
+    hr {
+      margin: 5px auto;
+    }
+  
+    .single-recipe:hover .recipe-desc {
+      bottom: 25% !important;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .single-recipe img {
+      width: 80%;
+    }
+  
+    .recipe-desc p {
+      font-size: 10px;
+    }
+  }
+
 @media screen and (max-width: 770px) {
     .single-recipe {
         flex-basis: 100%;
@@ -329,6 +469,16 @@ hr {
         bottom: 25% !important;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .single-recipe img {
+      width: 70%;
+    }
+  
+    .recipe-desc p {
+      font-size: 8px;
+    }
+  }
 
 /*----------------buy book-----------------*/
 
@@ -406,13 +556,61 @@ hr {
 }
 
 
+@media screen and (max-width: 1000px) {
+    .order-col {
+      flex-basis: 100%;
+    }
+  }
 
+  @media screen and (max-width: 850px) {
+    .order-col {
+      flex-basis: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+  
+    .book img {
+      width: 100px;
+      margin-right: 10px;
+    }
+  
+    .book-info .fa {
+      font-size: 16px;
+    }
+  
+    .order-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
 
 @media screen and (max-width: 770px) {
     .order-col {
         flex-basis: 100%;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .order-col {
+      flex-basis: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+  
+    .book img {
+      width: 80px;
+      margin-right: 10px;
+    }
+  
+    .book-info .fa {
+      font-size: 14px;
+    }
+  
+    .order-button {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
 
 /*---------------footer-------------------*/
 
@@ -523,10 +721,64 @@ hr {
     margin-top: auto;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer-left,
+    .footer-right {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .footer-left,
+    .footer-right {
+      flex-basis: 100%;
+      font-size: 12px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-img {
+      max-width: 30px;
+      top: 18%;
+    }
+  }
+
 @media screen and (max-width: 770px) {
     .footer-left,
 .footer-right {
     flex-basis: 100%;
     font-size: 14px;
 }
+
+.footer-img {
+    max-width: 40px;
+    top: 22%;
 }
+}
+
+@media screen and (max-width: 680px) {
+    .footer-left,
+    .footer-right {
+      flex-basis: 100%;
+      font-size: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-img {
+      max-width: 20px;
+      top: 14%;
+    }
+  
+    .social-links .fa {
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .social-links p {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  }
