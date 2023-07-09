@@ -269,7 +269,7 @@ nav ul li a {
 }
 
 .feature-text p {
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: initial;
 }
 
@@ -341,7 +341,7 @@ nav ul li a {
     }
     
     .features-img img {
-      width: 40%;
+      width: 100%;
     }
     
     .features h1 {
@@ -472,7 +472,7 @@ hr {
 
 @media screen and (max-width: 680px) {
     .single-recipe img {
-      width: 70%;
+      width: 100%;
     }
   
     .recipe-desc p {
