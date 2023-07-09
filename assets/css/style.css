@@ -714,6 +714,11 @@ hr {
     margin-top: 20px;
 }
 
+p a {
+    color: #59dd2d; /* Change to your desired color */
+    text-decoration: none; /* Remove underline */
+  }
+
 .copyright {
     font-size: 1.4rem;
     line-height: 1.6;
