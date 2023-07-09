@@ -56,7 +56,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #555;
+    background: #fff;
     z-index: -1;
     transition: 0.5s;
 }
@@ -109,8 +109,17 @@ nav ul li a {
 }
 
 @media screen and (max-width: 770px) {
+
+    #banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.287), rgba(0, 0, 0, 0.269)), url(../images/background-banner-small.png);
+    
+    }
     .banner-text h1 {
         font-size: 44px;
+    }
+
+    .banner-text p {
+        font-size: 15px;
     }
 
     .banner-btn a {
@@ -381,11 +390,10 @@ hr {
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #009688;
+    color: #59dd2d;
+    background-color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -393,7 +401,8 @@ hr {
 }
 
 .order-button:hover {
-    background-color: #00796b;
+    background-color: #59dd2d;
+    color: #000;
 }
 
 
@@ -408,8 +417,9 @@ hr {
 /*---------------footer-------------------*/
 
 #footer {
-    padding: 100px 0 20px;
+    padding: 50px 0 10px;
     background: #efefef;
+    position: relative;
 
 }
 
@@ -440,15 +450,43 @@ hr {
     line-height: 35px;
 }
 
-.footer-left .fa,
-.footer-right .fa {
-    font-size: 15px;
+.footer-left .fa1,
+.footer-right .fa1 {
+    font-size: 20px;
+    color: #ef0b0b;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.footer-left .fa2,
+.footer-right .fa2 {
+    font-size: 20px;
+    color: #efe70b;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.footer-left .fa3,
+.footer-right .fa3 {
+    font-size: 20px;
     color: #59dd2d;
     margin-left: 10px;
     margin-top: 5px;
     align-self: center;
-    
 }
+
+.footer-img {
+    max-width: 100px;
+    margin-top: 50px;
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .social-links {
     text-align: center;
@@ -459,7 +497,7 @@ hr {
     width: 40px;
     font-size: 20px;
     line-height: 40px;
-    border: 1px solid #59dd2d;
+    /*border: 1px solid #59dd2d;*/
     margin: 40px 5px 0;
     color: #59dd2d;
     cursor: pointer;
@@ -476,6 +514,13 @@ hr {
 .social-links p {
     font-size: 12px;
     margin-top: 20px;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
 }
 
 @media screen and (max-width: 770px) {
